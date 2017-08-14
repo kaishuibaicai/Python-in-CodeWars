@@ -148,18 +148,68 @@ test.assert_equals(countBits(10), 2);
 **LIFE**
 
 ```python
+def countBits(n):
+    return bin(n).count('1')
+  
+#####################################
 
+def countBits(n):
+    l = bin(n).replace('0b','')
+    return bin(n).count('1')
+```
+
+**知识点**
+
+1. bin() 是将整数转换成二进制字符串的方法，字符串前面会有’0b‘
+2. .count(' ')统计特定字符个数
+3. .replace('a','b')将a用b取代
+
+
+
+------
+
+### 第五题：编写函数likes( )满足一下测试：
+
+```python
+Test.assert_equals(likes([]), 'no one likes this')
+Test.assert_equals(likes(['Peter']), 'Peter likes this')
+Test.assert_equals(likes(['Jacob', 'Alex']), 'Jacob and Alex like this')
+Test.assert_equals(likes(['Max', 'John', 'Mark']), 'Max, John and Mark like this')
+Test.assert_equals(likes(['Alex', 'Jacob', 'Mark', 'Max']), 'Alex, Jacob and 2 others like this')
+```
+
+**LIFE**
+
+```python
+def likes(names):
+    i = len(names)
+    if i == 0:
+        return 'no one likes this'
+    elif i == 1:
+        return '{} likes this'.format(names[0])
+    elif i == 2:
+        return '{} and {} like this'.format(names[0],names[1])
+    elif i == 3:
+        return '{}, {} and {} like this'.format(names[0],names[1],names[2])
+    elif i >= 4:
+        return '{}, {} and {} others like this'.format(names[0],names[1],str(i-2))
 ```
 
 **DREAM**
 
 ```python
-
+def likes(names):
+    n = len(names)
+    return {
+        0: 'no one likes this',
+        1: '{} likes this', 
+        2: '{} and {} like this', 
+        3: '{}, {} and {} like this', 
+        4: '{}, {} and {others} others like this'
+    }[min(4, n)].format(*names[:3], others=n-2)
 ```
 
 **知识点**
 
-1. '%.2f' % sum 保留小数点后两位并且返回str类型
-2. 关于保留小数点后几位的操作参考[这里](http://www.cnblogs.com/Raymon-Geng/p/5784290.html)
-3. str.format() [官方文档](https://docs.python.org/3.5/library/stdtypes.html?highlight=str%20format#str.format)、[个人总结](http://www.cnblogs.com/hongten/archive/2013/07/27/hongten_python_format.html)
+1. ​
 
