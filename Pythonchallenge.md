@@ -2,7 +2,7 @@
 
 ---
 
-### 1.修改URL
+### 0.修改URL
 
 ```python
 2 ** 38
@@ -11,7 +11,7 @@
 
 ---
 
-### 2.根据密码图翻译一段话：
+### 1.根据密码图翻译一段话：
 
 ```python
 #g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj.
@@ -43,15 +43,16 @@ key("g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle 
 接着翻译url上的"map"得到"ocr",打开下一个界面
 ```
 
-Ascll码表:
+- Ascll码表:
 
 ![Ascll码表](http://ww1.sinaimg.cn/large/bd31b54fgy1fikua0wh7cj20w30mn7e8.jpg)
 
-[**string.maketrans()**](http://www.runoob.com/python3/python3-string-maketrans.html)的使用参考
+- [**string.maketrans()**](http://www.runoob.com/python3/python3-string-maketrans.html)的使用参考
+- [**官方答案**](http://wiki.pythonchallenge.com/index.php?title=Level1:Main_Page)
 
 ---
 
-### 3.打开页面后，得到以下提示：recognize the characters. maybe they are in the book, but MAYBE they are in the page source.
+### 2.打开页面后，得到以下提示：recognize the characters. maybe they are in the book, but MAYBE they are in the page source.
 
 遂单击右键打开检查，查看页面源，果然发现如下字符串：
 
@@ -93,8 +94,46 @@ print (n)
 得到equality，打开下一个页面
 ```
 
-[**按行读取文件**](http://www.cnblogs.com/xuxn/archive/2011/07/27/read-a-file-with-python.html)参考
+- [**按行读取文件**](http://www.cnblogs.com/xuxn/archive/2011/07/27/read-a-file-with-python.html)参考
+- [**官方答案**](http://wiki.pythonchallenge.com/index.php?title=Level2:Main_Page)
 
 ---
 
-### 4.
+### 3.One small letter, surrounded by **EXACTLY** three big bodyguards on each of its sides.
+
+![3题图](http://www.pythonchallenge.com/pc/def/bodyguard.jpg)
+
+```python
+该小写字母两边均被三个大写字符包围，图中可以看出物体高低看出：小大大大[小]大大大小
+import re
+file = open("4.txt")
+n = ""
+while 1:
+    line = file.readline()
+    if not line:
+        break
+    for l in line:
+        if ord(l) >= 65 and ord(l) <= 90:
+            n += l
+        elif ord(l) >= 97 and ord(l) <= 122:
+            n += l
+patt = """[a-z][A-Z]{3}([a-z])[A-Z]{3}[a-z]"""
+a = re.findall(patt,n)
+print (a)
+得到结果：['l', 'i', 'n', 'k', 'e', 'd', 'l', 'i', 's', 't']
+```
+
+- [**Python中re的match、search、findall、finditer区别**](http://blog.csdn.net/djskl/article/details/44357389)
+
+
+
+---
+
+### 4.打开页面后是一个提示：
+
+提示是“linkedlist.php”，更改url后，是一张图，图片可点击。点击后又是提示“and the next nothing is 44827”，更改url：nothing=44827。又是一个提示“and the next nothing is 45439”。不出预料，又是一个更改url的提示，并且他还嘲讽我说：手会累的。遂：
+
+```Python
+
+```
+
