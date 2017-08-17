@@ -124,7 +124,7 @@ print (a)
 ```
 
 - [**Python中re的match、search、findall、finditer区别**](http://blog.csdn.net/djskl/article/details/44357389)
-
+- [python里的正则表达式](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/00143193331387014ccd1040c814dee8b2164bb4f064cff000)
 
 
 ---
@@ -134,6 +134,25 @@ print (a)
 提示是“linkedlist.php”，更改url后，是一张图，图片可点击。点击后又是提示“and the next nothing is 44827”，更改url：nothing=44827。又是一个提示“and the next nothing is 45439”。不出预料，又是一个更改url的提示，并且他还嘲讽我说：手会累的。遂：
 
 ```Python
+import urllib.request
+import re
 
+url = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=12345'
+while 1:
+    h= str(urllib.request.urlopen(url).read())
+    a = re.findall(r'the next nothing is (\d+)',h)
+    if a[0] is None:
+        print (h)
+        break
+    print (h)
+    print (a[0])
+    url = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing='+a[0]
 ```
 
+通过小爬虫的到最后一个数字是：16044，打开页面是这么一句话：“Yes. Divide by two and keep going.”，额，还要继续：“and the next nothing is 25357”。到了“82682”这里出现了**误导数字**，需要屏蔽“There maybe misleading numbers in the text. One example is 82683. Look only for the next nothing and the next nothing is 63579”。需要加强爬虫的屏蔽功能，在正则表达式前加上**”the next nothing is “**。最终打开的网页名是：peak.html.
+
+- [**urllib2**](http://python.jobbole.com/86247/)
+
+---
+
+### 5.
