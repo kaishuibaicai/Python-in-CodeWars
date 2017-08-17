@@ -2,6 +2,10 @@
 
 ---
 
+[TOC]
+
+
+
 ### 0.修改URL
 
 ```python
@@ -203,4 +207,89 @@ data的值：
 
 ---
 
-### 6.
+### 6.打开后是这样的：
+
+![6](http://www.pythonchallenge.com/pc/def/channel.jpg)
+
+遂打开源代码，
+
+```html
+<html> <!-- <-- zip -->
+<head>
+  <title>now there are pairs</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<center>
+<img src="channel.jpg">
+<br/>
+```
+
+第一行有“zip”字样，将URL更改成channel.zip, 就把压缩包解压了。里面全是txt文件，又是"the next nothing is ..." , 里面有的readme文件， 打开说：”welcome to my zipped list.hint1: start from 90052 hint2: answer is inside the zip“
+
+```python
+import re
+url = 'channel/90052.txt'
+file = open(url)
+while 1:
+    file = open(url)
+    line = file.readline()
+    a = re.findall(r'Next nothing is (\d+)',line)
+    if a[0] is None:
+        print (line)
+        break
+    print (line)
+    print (a[0])
+    url = 'channel/'+a[0]+'.txt'
+```
+
+程序到46145.txt 就停下来到了，打开一看提示：**Collect the comments.**
+
+根据参考，原来是每个文件还有注释，也需要保存在一个列表里，更改代码如下：
+
+```python
+import re, zipfile
+
+f = zipfile.ZipFile("channel/channel.zip")
+url = '90052.txt'
+comments = []
+while 1:
+    line = f.read(url).decode("utf-8")
+    a = re.search(r'Next nothing is (\d+)',line)
+    comments.append(f.getinfo(url).comment.decode("utf-8"))
+    if a is None:
+        print (line)
+        break
+    print (line)
+    url = a.group(1)+'.txt'
+print ("".join(comments))
+```
+
+得到如下图案：
+
+```
+****************************************************************
+****************************************************************
+**                                                            **
+**   OO    OO    XX      YYYY    GG    GG  EEEEEE NN      NN  **
+**   OO    OO  XXXXXX   YYYYYY   GG   GG   EEEEEE  NN    NN   **
+**   OO    OO XXX  XXX YYY   YY  GG GG     EE       NN  NN    **
+**   OOOOOOOO XX    XX YY        GGG       EEEEE     NNNN     **
+**   OOOOOOOO XX    XX YY        GGG       EEEEE      NN      **
+**   OO    OO XXX  XXX YYY   YY  GG GG     EE         NN      **
+**   OO    OO  XXXXXX   YYYYYY   GG   GG   EEEEEE     NN      **
+**   OO    OO    XX      YYYY    GG    GG  EEEEEE     NN      **
+**                                                            **
+****************************************************************
+ **************************************************************
+```
+
+打开hockey.html后，得到：“it's in the air. look at the letters.”，再看上面的图案，里面的字母是：“oxygen”
+
+- [**Python 的 zipfile 处理**](http://python.jobbole.com/81519/)
+
+
+
+---
+
+### 7.
