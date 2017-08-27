@@ -1,0 +1,43 @@
+1503822278949	geckodriver	INFO	geckodriver 0.18.0
+1503822278953	geckodriver	INFO	Listening on 127.0.0.1:37325
+1503822280174	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1503822281419	Marionette	INFO	Enabled via --marionette
+1503822284646	Marionette	INFO	Listening on port 45377
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1503822284729	Marionette	WARN	TLS certificate errors will be ignored for this session
+1503822284788	Marionette	DEBUG	loaded listener.js
+1503822284883	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1503822286371	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1503822286372	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1503822287735	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.baidu.com/"
+1503822288017	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.baidu.com/"
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=Selen&json=1&p=3&sid=1467_21081_20929&csor=5&pwd=Sele&cb=jQuery1102027058097443897633_1503822287333&_=1503822287339, line 1: TypeError: jQuery1102027058097443897633_1503822287333 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=Seleni&json=1&p=3&sid=1467_21081_20929&csor=6&pwd=Selen&cb=jQuery1102027058097443897633_1503822287333&_=1503822287340, line 1: TypeError: jQuery1102027058097443897633_1503822287333 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=Sele&json=1&p=3&sid=1467_21081_20929&csor=4&pwd=Sel&cb=jQuery1102027058097443897633_1503822287333&_=1503822287338, line 1: TypeError: jQuery1102027058097443897633_1503822287333 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=Sel&json=1&p=3&sid=1467_21081_20929&csor=3&pwd=Se&cb=jQuery1102027058097443897633_1503822287333&_=1503822287337, line 1: TypeError: jQuery1102027058097443897633_1503822287333 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=Se&json=1&p=3&sid=1467_21081_20929&csor=2&pwd=S&cb=jQuery1102027058097443897633_1503822287333&_=1503822287336, line 1: TypeError: jQuery1102027058097443897633_1503822287333 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=S&json=1&p=3&sid=1467_21081_20929&csor=1&cb=jQuery1102027058097443897633_1503822287333&_=1503822287335, line 1: TypeError: jQuery1102027058097443897633_1503822287333 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=Seleniu&json=1&p=3&sid=1467_21081_20929&csor=7&pwd=Seleni&cb=jQuery1102027058097443897633_1503822287333&_=1503822287341, line 1: TypeError: jQuery1102027058097443897633_1503822287333 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=Selenium&json=1&p=3&sid=1467_21081_20929&csor=8&pwd=Seleniu&cb=jQuery1102027058097443897633_1503822287333&_=1503822287342, line 1: TypeError: jQuery1102027058097443897633_1503822287333 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=Selenium2&json=1&p=3&sid=1467_21081_20929&csor=9&pwd=Selenium&cb=jQuery1102027058097443897633_1503822287333&_=1503822287343, line 1: TypeError: jQuery1102027058097443897633_1503822287333 is not a function
+1503822289243	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1503822289249	Marionette	INFO	New connections will no longer be accepted
+1503822855824	geckodriver	INFO	geckodriver 0.18.0
+1503822855828	geckodriver	INFO	Listening on 127.0.0.1:48419
+1503822857077	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1503822858505	Marionette	INFO	Enabled via --marionette
+1503822861355	Marionette	INFO	Listening on port 46809
+JavaScript error: chrome://marionette/content/server.js, line 337: NS_ERROR_SOCKET_ADDRESS_IN_USE: Component returned failure code: 0x804b0036 (NS_ERROR_SOCKET_ADDRESS_IN_USE) [nsIServerSocket.initSpecialConnection]
+1503822861431	Marionette	WARN	TLS certificate errors will be ignored for this session
+1503822861497	Marionette	DEBUG	loaded listener.js
+1503822861554	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1503822861680	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1503822861680	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1503822861972	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.baidu.com/"
+1503822864727	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.baidu.com/"
+1503822865057	Marionette	DEBUG	Received DOM event "beforeunload" for "http://www.baidu.com/"
+1503822865437	Marionette	DEBUG	Received DOM event "pagehide" for "http://www.baidu.com/"
+1503822865438	Marionette	DEBUG	Received DOM event "unload" for "http://www.baidu.com/"
+1503822866832	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.baidu.com/s?wd=Selenium2&ie=utf-8&rsv_op=WWQX60K5KcZ2aULVU5O6dhXM1chKN2TZSZMOMZKNMS0Wga4UPOXTdTVLaS2aJ6VXKd6QcVRT5V4IgabJZ4aMOh1a8RX7aWeX&tn=97994036_hao_pg&ch=&rsv_su=0QdT3hcUYU869M0bROTIWWMcRTITeaMgRb0g8K8QW7Y8IhV3cVRefSg9W70SXWRXLccTKePUTge1hPfX8TaUN6U15XaZfOTX"
+1503822867228	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.baidu.com/s?wd=Selenium2&ie=utf-8&rsv_op=WWQX60K5KcZ2aULVU5O6dhXM1chKN2TZSZMOMZKNMS0Wga4UPOXTdTVLaS2aJ6VXKd6QcVRT5V4IgabJZ4aMOh1a8RX7aWeX&tn=97994036_hao_pg&ch=&rsv_su=0QdT3hcUYU869M0bROTIWWMcRTITeaMgRb0g8K8QW7Y8IhV3cVRefSg9W70SXWRXLccTKePUTge1hPfX8TaUN6U15XaZfOTX"
+1503822867254	Marionette	INFO	New connections will no longer be accepted
