@@ -27,3 +27,9 @@ selenium.common.exceptions.WebDriverException: Message: u'session not created ex
 
 System.setProperty("webdriver.chrome.driver", "C:\Python27\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe");
 
+
+
+---
+
+2.如何在Windows下同时使用py2 和 py3 [参考](https://python.freelycode.com/contribution/detail/139)
+
