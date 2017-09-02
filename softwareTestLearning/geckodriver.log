@@ -1,5 +1,5 @@
-1503822278949	geckodriver	INFO	geckodriver 0.18.0
-1503822278953	geckodriver	INFO	Listening on 127.0.0.1:37325
+1504368926378	geckodriver	INFO	Listening on 127.0.0.1:56696
+8953	geckodriver	INFO	Listening on 127.0.0.1:37325
 1503822280174	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
 1503822281419	Marionette	INFO	Enabled via --marionette
 1503822284646	Marionette	INFO	Listening on port 45377
