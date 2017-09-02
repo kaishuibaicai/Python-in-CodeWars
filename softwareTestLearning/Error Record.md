@@ -25,8 +25,6 @@ selenium.common.exceptions.WebDriverException: Message: u'session not created ex
 
 
 
-System.setProperty("webdriver.chrome.driver", "C:\Python27\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe");
-
 
 
 ---
@@ -65,3 +63,10 @@ except UnicodeEncodeError:
 ```
 
 [参考](https://stackoverflow.com/questions/4237898/unicodedecodeerror-ascii-codec-cant-decode-byte-0xe0-in-position-0-ordinal)
+
+---
+
+#### 4.Selenium3的版本没有自带浏览器驱动，需要自行下载并且放在Python文件夹下的script文件里。
+
+[参考](http://www.jianshu.com/p/a383e8970135)
+
