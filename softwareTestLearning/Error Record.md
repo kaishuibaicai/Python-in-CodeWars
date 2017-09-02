@@ -2,7 +2,7 @@
 
 ---
 
-1.在使用Chromedriver的时候由于版本过低引起的错误。[参考](https://stackoverflow.com/questions/40373801/python-selenium-webdriver-session-not-created-exception-when-opening-chrome)
+#### 1.在使用Chromedriver的时候由于版本过低引起的错误。[参考](https://stackoverflow.com/questions/40373801/python-selenium-webdriver-session-not-created-exception-when-opening-chrome)
 
 ```python
 Traceback (most recent call last):
@@ -31,5 +31,37 @@ System.setProperty("webdriver.chrome.driver", "C:\Python27\Lib\site-packages\se
 
 ---
 
-2.如何在Windows下同时使用py2 和 py3 [参考](https://python.freelycode.com/contribution/detail/139)
+#### 2.如何在Windows下同时使用py2 和 py3 [参考](https://python.freelycode.com/contribution/detail/139)
 
+#### 如何同时在Windows下安装Anaconda2 和 Anaconda3[参考](http://blog.csdn.net/Infin1te/article/details/50445217)
+
+
+
+---
+
+#### 3.Windows环境下的编码错误问题：
+
+```Python
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xcb in position 37
+: ordinal not in range(128)
+```
+
+找到错误提示的文件并打开，加上如下代码：
+
+```python
+if sys.getdefaultencoding() != 'gbk':
+    reload(sys)
+    sys.setdefaultencoding('gbk')
+    default_encoding = sys.getdefaultencoding()
+```
+
+或定位出错的位置加上如下代码：
+
+```Python
+try:
+    出错代码
+except UnicodeEncodeError:
+    pass
+```
+
+[参考](https://stackoverflow.com/questions/4237898/unicodedecodeerror-ascii-codec-cant-decode-byte-0xe0-in-position-0-ordinal)
