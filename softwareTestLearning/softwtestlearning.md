@@ -40,5 +40,5 @@
    sudo mv ～/Downloads/geckodriver /usr/local/bin/作者：王阳阳链接：https://www.zhihu.com/question/49568096/answer/131093426来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 
-Farther, Farther,  Your dreams fell on my shoulder, Your blood runs in my veins.
+Farther, Farther,  Your dreams fell on my shoulder, Your blood runs in my veins.f
 
