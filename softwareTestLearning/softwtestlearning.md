@@ -4,7 +4,25 @@
 
 [Python自动单元测试框架](https://www.ibm.com/developerworks/cn/linux/l-pyunit/)
 
+[selenium webdriver定位不到元素的六种原因及解决办法：](http://www.51testing.com/html/87/300987-831171.html)
 
+- 动态id定位不到元素
+
+- iframe原因定位不到元素
+
+
+- 不在同一个frame里边查找元素
+
+
+- xpath描述错误
+
+
+- 点击速度过快 页面没有加载出来就需要点击页面上的元素
+
+
+- firefox安全性强，不允许跨域调用出现报错
+
+  ​
 
 
 

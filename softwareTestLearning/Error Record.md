@@ -23,10 +23,6 @@ selenium.common.exceptions.WebDriverException: Message: u'session not created ex
 
 需要升级版本，[下载](http://chromedriver.storage.googleapis.com/index.html?path=2.24/)后配置PATH环境变量
 
-
-
-
-
 ---
 
 #### 2.如何在Windows下同时使用py2 和 py3 [参考](https://python.freelycode.com/contribution/detail/139)
@@ -69,4 +65,17 @@ except UnicodeEncodeError:
 #### 4.Selenium3的版本没有自带浏览器驱动，需要自行下载并且放在Python文件夹下的script文件里。
 
 [参考](http://www.jianshu.com/p/a383e8970135)
+
+---
+
+#### [5.selenium webdriver定位不到元素的六种原因及解决办法：](http://www.51testing.com/html/87/300987-831171.html)
+
+- 动态id定位不到元素
+- iframe原因定位不到元素
+- 不在同一个frame里边查找元素
+- xpath描述错误
+- 点击速度过快 页面没有加载出来就需要点击页面上的元素
+- firefox安全性强，不允许跨域调用出现报错
+
+---
 
