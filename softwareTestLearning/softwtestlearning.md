@@ -22,8 +22,12 @@
 
 - firefox安全性强，不允许跨域调用出现报错
 
-  ​
 
+[Selenium基本使用总结（Python）](http://www.jianshu.com/p/a383e8970135)
+
+[产品测试规范](http://www.51testing.com/html/06/n-3718006.html)
+
+ [selenium WebDriver定位元素学习总结](http://blog.csdn.net/jojoy_tester/article/details/53453888)
 
 
 ### 问题解决
